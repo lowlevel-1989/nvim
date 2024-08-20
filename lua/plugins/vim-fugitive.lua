@@ -8,5 +8,4 @@ return {
   keys = {
     { "<leader>go", ":GBrowse<cr>", mode = "n", desc = "fugitive open repo"}
   },
-  opts = {},
 }

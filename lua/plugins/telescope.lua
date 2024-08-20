@@ -20,7 +20,6 @@ return {
     }
   },
   config = function(plugin)
-
     local telescope  = require("telescope")
     local builtin    = require('telescope.builtin')
 
@@ -47,6 +46,5 @@ return {
     vim.keymap.set("n", "<leader>bd", ":bd<cr>",                       {})
     vim.keymap.set("n", "<leader>bc", ":BufferClose<cr>",              {})
     vim.keymap.set("n", "<leader>bx", ":BufferCloseAllButCurrent<cr>", {})
-
   end
 }
