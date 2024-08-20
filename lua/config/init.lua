@@ -5,7 +5,7 @@ vim.o.laststatus      = 2         -- colorea el status bar
 vim.o.showmatch       = true      -- higlight matching () y []
 
 -- Window Options
-vim.wo.cursorline     = true      -- pinta la linea donde esta el cursor
+vim.wo.cursorline     = false     -- pinta la linea donde esta el cursor
 vim.wo.number         = true      -- muestra los numeros
 vim.wo.relativenumber = true      -- numero relativos al cursor
 
