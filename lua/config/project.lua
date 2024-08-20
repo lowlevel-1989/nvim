@@ -1,4 +1,4 @@
-local open_project = function(opts)
+local function open_project(opts)
     vim.cmd("NvimTreeClose"             )
     vim.cmd("cd "           .. opts.args)
     vim.cmd("NvimTreeOpen " .. opts.args)
