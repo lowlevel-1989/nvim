@@ -43,9 +43,10 @@ return {
     vim.keymap.set("n", "<leader>gl", builtin.git_files,    {})
 
     -- keymap buffer
-    vim.keymap.set("n", "<leader>bl", builtin.buffers,    {})
-    vim.keymap.set("n", "<leader>bd", ":bd<cr>",          {})
-    vim.keymap.set("n", "<leader>bc", ":BufferCloseAllButCurrent<cr>", {})
+    vim.keymap.set("n", "<leader>bl", builtin.buffers,                 {})
+    vim.keymap.set("n", "<leader>bd", ":bd<cr>",                       {})
+    vim.keymap.set("n", "<leader>bc", ":BufferClose<cr>",              {})
+    vim.keymap.set("n", "<leader>bx", ":BufferCloseAllButCurrent<cr>", {})
 
   end
 }
