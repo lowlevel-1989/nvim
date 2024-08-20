@@ -25,7 +25,7 @@ function xclip_paste()
 end
 
 -- Mapeo de teclas
-vim.api.nvim_set_keymap("n", "<leader>Y", ":lua xclip_copy_to_clipboard()<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>P", ":lua xclip_paste_from_clipboard()<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>y", ":lua xclip_copy()<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>p", ":lua xclip_paste()<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>Y", ":lua xclip_copy_to_clipboard()<cr>",    {})
+vim.keymap.set("n", "<leader>P", ":lua xclip_paste_from_clipboard()<cr>", {})
+vim.keymap.set("n", "<leader>y", ":lua xclip_copy()<cr>",  {})
+vim.keymap.set("n", "<leader>p", ":lua xclip_paste()<cr>", {})
