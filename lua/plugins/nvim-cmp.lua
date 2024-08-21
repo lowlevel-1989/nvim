@@ -1,17 +1,22 @@
+--[[
+Autocompletado
+--]]
 return {
   "hrsh7th/nvim-cmp",
   dependencies = {
-    "hrsh7th/cmp-cmdline", -- autocompletado en la linea de comando de nvim
-    "hrsh7th/cmp-buffer",  -- autocompletado dentro de los buffers
+    "hrsh7th/cmp-cmdline",  -- autocompletado en la linea de comando de nvim
+    "hrsh7th/cmp-buffer",   -- autocompletado dentro de los buffers
     "hrsh7th/cmp-path",
+    "hrsh7th/cmp-nvim-lsp", -- Autocompletado para lsp
   },
   config = function(plugin)
     local cmp = require("cmp")
 
     local opts = {
       sources = cmp.config.sources({
-        { name = "buffer" },
-        { name = "path" },
+        { name = "buffer"   },
+        { name = "path"     },
+        { name = "nvim_lsp" },
       }),
       mapping = cmp.mapping.preset.insert({
         ["k"]         = cmp.mapping.scroll_docs(-4),

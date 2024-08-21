@@ -1,3 +1,6 @@
+--[[
+Solución de tabs
+--]]
 return {
   "romgrk/barbar.nvim",
   enable = false,

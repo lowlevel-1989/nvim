@@ -14,7 +14,7 @@ vim.opt.tabstop       = 2         -- número de espacios que representa un tab
 vim.opt.softtabstop   = 2         -- número de espacios que quieres usar al presionar Tab  
 vim.opt.shiftwidth    = 2         -- número de espacios a usar para la indentación
 
-vim.opt.list          = true      -- muestra caracteres especiales
+vim.opt.list          = false     -- muestra caracteres especiales
 
 vim.opt.listchars = {
   tab      = '→ ',
@@ -25,3 +25,5 @@ vim.opt.listchars = {
   precedes = '«',
   extends  = '»'
 }
+
+vim.api.nvim_set_keymap('t', '<C-x>', [[<C-\><C-n>]], { noremap = true, silent = true })

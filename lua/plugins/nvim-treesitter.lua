@@ -1,3 +1,6 @@
+--[[
+Pinta la sintaxis del codigo
+--]]
 return {
   "nvim-treesitter/nvim-treesitter",
   main = "nvim-treesitter.configs",

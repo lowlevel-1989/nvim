@@ -1,3 +1,6 @@
+--[[
+Soporte a los comandos de git
+--]]
 return {
   "tpope/vim-fugitive",
   dependencies = {

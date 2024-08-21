@@ -1,3 +1,6 @@
+--[[
+Mucho mas que un simple buscador de archivos
+--]]
 return {
   "nvim-telescope/telescope.nvim",
   dependencies = {
@@ -40,6 +43,7 @@ return {
     vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
     vim.keymap.set("n", "<leader>gs", builtin.git_status,   {})
     vim.keymap.set("n", "<leader>gl", builtin.git_files,    {})
+
 
     -- keymap buffer
     vim.keymap.set("n", "<leader>bl", builtin.buffers,                 {})
