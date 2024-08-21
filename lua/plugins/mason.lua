@@ -19,6 +19,7 @@ return {
     vim.keymap.set('n', 'gi',         vim.lsp.buf.implementation,  {})
     vim.keymap.set('n', 'gr',         vim.lsp.buf.references,      {})
     vim.keymap.set('n', 'gc',         vim.lsp.buf.incoming_calls,  {})
+    vim.keymap.set('n', 'rs',         vim.lsp.buf.rename,          {})
     vim.keymap.set('n', '<leader>dp', vim.diagnostic.open_float,   {})
 
     require("mason").setup({})
