@@ -1,6 +1,6 @@
 local function run_refurb(opts)
   local shell = os.getenv("SHELL")
-  vim.cmd("split")
+  vim.cmd("rightbelow split")
   vim.cmd("term refurb " .. opts.args .. " ;" .. shell)
 end
 

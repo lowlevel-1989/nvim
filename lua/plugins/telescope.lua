@@ -28,6 +28,7 @@ return {
 
     telescope.setup(plugin.opts)
     telescope.load_extension("fzf")
+    telescope.load_extension("todo-comments")
 
     -- keymap busqueda
     vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
