@@ -9,6 +9,6 @@ return {
   },
   cmd = {"G", "Git", "GBrowse"},
   keys = {
-    { "<leader>go", ":GBrowse<cr>", mode = "n", desc = "fugitive open repo"}
+    { "<leader>go", ":GBrowse<cr>", mode = "n", desc = "git open file url"}
   },
 }

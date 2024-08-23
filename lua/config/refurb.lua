@@ -4,4 +4,4 @@ local function run_refurb(opts)
   vim.cmd("term refurb " .. opts.args .. " ;" .. shell)
 end
 
-vim.api.nvim_create_user_command("Refurb", run_refurb, { nargs = 1, complete = "file"})
+vim.api.nvim_create_user_command("Refurb", run_refurb, { desc = "Run Refurb (python)", nargs = 1, complete = "file"})

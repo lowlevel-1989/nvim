@@ -8,15 +8,28 @@ return {
     "hrsh7th/cmp-buffer",   -- autocompletado dentro de los buffers
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-nvim-lsp", -- Autocompletado para lsp
+
+    "L3MON4D3/LuaSnip",              -- engine snippets
+    "rafamadriz/friendly-snippets",  -- Los snippets
+    "saadparwaiz1/cmp_luasnip",      -- Asignar el sources de snippets
   },
   config = function(plugin)
     local cmp = require("cmp")
 
+    -- carga los friendly-snippets
+    require("luasnip.loaders.from_vscode").lazy_load()
+
     local opts = {
+      snippet = {
+        expand = function(args)
+          require("luasnip").lsp_expand(args.body)
+        end
+      },
       sources = cmp.config.sources({
         { name = "buffer"   },
         { name = "path"     },
         { name = "nvim_lsp" },
+        { name = "luasnip"  },
       }),
       mapping = cmp.mapping.preset.insert({
         ["k"]         = cmp.mapping.scroll_docs(-4),

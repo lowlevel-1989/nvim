@@ -34,22 +34,24 @@ return {
     vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
     vim.keymap.set("n", "<leader>fl", builtin.find_files, {})
     vim.keymap.set("n", "<leader>fg", builtin.live_grep,  {})
+    vim.keymap.set("n", "<leader>fk", builtin.keymaps,    {})
     vim.keymap.set("n", "<leader>fb", builtin.buffers,    {})
     vim.keymap.set("n", "<leader>fh", builtin.help_tags,  {})
     vim.keymap.set("n", "<leader>fp", builtin.man_pages,  {})
+    vim.keymap.set("n", "man",        builtin.man_pages,  {})
 
     -- keymap git
-    vim.keymap.set("n", "<leader>gc", builtin.git_commits,  {})
-    vim.keymap.set("n", "<leader>gd", builtin.git_bcommits, {})
-    vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
-    vim.keymap.set("n", "<leader>gs", builtin.git_status,   {})
-    vim.keymap.set("n", "<leader>gl", builtin.git_files,    {})
+    vim.keymap.set("n", "<keader>gc", builtin.git_commits,  {desc = "git commits"})
+    vim.keymap.set("n", "<leader>gd", builtin.git_bcommits, {desc = "git bcommits"})
+    vim.keymap.set("n", "<leader>gb", builtin.git_branches, {desc = "git branches"})
+    vim.keymap.set("n", "<leader>gs", builtin.git_status,   {desc = "git status"})
+    vim.keymap.set("n", "<leader>gl", builtin.git_files,    {desc = "git ls-files"})
 
 
     -- keymap buffer
-    vim.keymap.set("n", "<leader>bl", builtin.buffers,                 {})
-    vim.keymap.set("n", "<leader>bd", ":bd<cr>",                       {})
-    vim.keymap.set("n", "<leader>bc", ":BufferClose<cr>",              {})
-    vim.keymap.set("n", "<leader>bx", ":BufferCloseAllButCurrent<cr>", {})
+    vim.keymap.set("n", "<leader>bl", builtin.buffers,                 {desc = "buffer list"})
+    vim.keymap.set("n", "<leader>bd", ":bd<cr>",                       {desc = "buffer delete"})
+    vim.keymap.set("n", "<leader>bc", ":BufferClose<cr>",              {desc = "buffer close"})
+    vim.keymap.set("n", "<leader>bx", ":BufferCloseAllButCurrent<cr>", {desc = "buffer close all but current"})
   end
 }

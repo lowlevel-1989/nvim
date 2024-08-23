@@ -8,6 +8,6 @@ return {
     local gitsigns = require("gitsigns")
     gitsigns.setup(plugin.opts)
 
-    vim.keymap.set("n", "<leader>gp", gitsigns.preview_hunk, {})
+    vim.keymap.set("n", "<leader>gp", gitsigns.preview_hunk, {desc = "git preview hunk"})
   end
 }

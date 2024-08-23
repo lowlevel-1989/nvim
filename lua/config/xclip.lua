@@ -7,7 +7,7 @@ end
 -- Función para pegar desde el portapapeles
 function xclip_paste_from_clipboard()
   local result = vim.fn.system("xclip -o -selection clipboard")
-  vim.fn.setreg('a', result)
+  vim.fn.setreg("a", result)
   vim.cmd('normal! "ap')
 end
 
@@ -20,12 +20,12 @@ end
 -- Función para pegar (buffer, util para tmux)
 function xclip_paste()
   local result = vim.fn.system("xclip -o")
-  vim.fn.setreg('a', result)
+  vim.fn.setreg("a", result)
   vim.cmd('normal! "ap')
 end
 
 -- Mapeo de teclas
-vim.keymap.set("n", "<leader>Y", ":lua xclip_copy_to_clipboard()<cr>",    {})
-vim.keymap.set("n", "<leader>P", ":lua xclip_paste_from_clipboard()<cr>", {})
-vim.keymap.set("n", "<leader>y", ":lua xclip_copy()<cr>",  {})
-vim.keymap.set("n", "<leader>p", ":lua xclip_paste()<cr>", {})
+vim.keymap.set("n", "<leader>Y", ":lua xclip_copy_to_clipboard()<cr>",    {desc = "b -> xclip clipboard"})
+vim.keymap.set("n", "<leader>P", ":lua xclip_paste_from_clipboard()<cr>", {desc = "b <- xclip clipboard"})
+vim.keymap.set("n", "<leader>y", ":lua xclip_copy()<cr>",  {desc = "b -> xclip buffer"})
+vim.keymap.set("n", "<leader>p", ":lua xclip_paste()<cr>", {desc = "b <- xclip buffer"})

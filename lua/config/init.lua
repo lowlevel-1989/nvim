@@ -26,4 +26,4 @@ vim.opt.listchars = {
   extends  = '»'
 }
 
-vim.api.nvim_set_keymap('t', '<C-x>', [[<C-\><C-n>]], { noremap = true, silent = true })
+vim.keymap.set('t', '<C-x>', [[<C-\><C-n>]], { desc = "Release terminal", noremap = true, silent = true })
