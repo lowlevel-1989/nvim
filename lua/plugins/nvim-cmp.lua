@@ -9,7 +9,10 @@ return {
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-nvim-lsp", -- Autocompletado para lsp
 
-    "L3MON4D3/LuaSnip",              -- engine snippets
+    {
+      "L3MON4D3/LuaSnip",              -- engine snippets
+      build = "make install_jsregexp",
+    },
     "rafamadriz/friendly-snippets",  -- Los snippets
     "saadparwaiz1/cmp_luasnip",      -- Asignar el sources de snippets
   },

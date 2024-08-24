@@ -49,6 +49,6 @@ return {
     ccc.setup(opts)
 
     vim.keymap.set("n", "<leader>c", ":CccPick<cr>", {desc = "Open ColorPicker"})
-    vim.keymap.set("n", "ocp",       ":CccPick<cr>", {desc = "Open ColorPicker"})
+    vim.keymap.set("n", "<leader>ocp", ":CccPick<cr>", {desc = "Open ColorPicker"})
   end
 }

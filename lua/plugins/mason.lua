@@ -28,6 +28,26 @@ return {
         function(server_name)
           require("lspconfig")[server_name].setup({})
         end,
+        volar = function ()
+          -- no hacer nada, se instala como plugin de tsserver
+        end,
+        tsserver = function ()
+          local mason_registry = require('mason-registry')
+          local vue_language_server_path = mason_registry.get_package('vue-language-server'):get_install_path() .. '/node_modules/@vue/language-server'
+
+          require("lspconfig")["tsserver"].setup({
+            init_options = {
+              plugins = {
+                {
+                  name = '@vue/typescript-plugin',
+                  location = vue_language_server_path,
+                  languages = { 'vue' },
+                },
+              },
+            },
+            filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+          })
+        end,
         lua_ls = function()
           require("lspconfig")["lua_ls"].setup({
             settings = {
