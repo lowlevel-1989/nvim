@@ -1,5 +1,5 @@
 --[[
-pinta los cambios de git en el documento
+Pinta los cambios de git en el documento
 --]]
 return {
   "lewis6991/gitsigns.nvim",

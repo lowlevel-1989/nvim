@@ -1,5 +1,5 @@
 --[[
-Gestor de paquetes
+Gestor de paquetes para LSP, DAP, formatter, Linter
 --]]
 return {
   "williamboman/mason.nvim",

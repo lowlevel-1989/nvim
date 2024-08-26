@@ -1,3 +1,6 @@
+--[[
+Permite conectar con ChatGPT
+--]]
 return {
   "jackMort/ChatGPT.nvim",
   dependencies = {

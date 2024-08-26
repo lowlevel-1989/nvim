@@ -1,7 +1,6 @@
 --[[
 Barra de estado
 --]]
-
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = {
