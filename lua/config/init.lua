@@ -27,3 +27,10 @@ vim.opt.listchars = {
 }
 
 vim.keymap.set('t', '<C-x>', [[<C-\><C-n>]], { desc = "Release terminal", noremap = true, silent = true })
+
+local function copy_path(opts)
+  vim.fn.setreg('"', opts.args)
+end
+
+vim.api.nvim_create_user_command("CopyPath", copy_path, { desc = "Copy Path", nargs = 1, complete = "file"})
+vim.api.nvim_create_user_command("CPath", copy_path, { desc = "Copy Path", nargs = 1, complete = "file"})
