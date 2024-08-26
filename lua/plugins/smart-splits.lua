@@ -23,5 +23,10 @@ return {
     vim.keymap.set("n", "<leader><leader><down>",  require("smart-splits").swap_buf_down, {noremap = true, silent = true})
     vim.keymap.set("n", "<leader><leader><up>",    require("smart-splits").swap_buf_up, {noremap = true, silent = true})
     vim.keymap.set("n", "<leader><leader><right>", require("smart-splits").swap_buf_right, {noremap = true, silent = true})
+
+    vim.keymap.set("n", "<leader>vs", ":vs<cr>", {})
+    vim.keymap.set("n", "<leader>hs", ":split<cr>", {})
+    vim.keymap.set("n", "<leader>sv", ":vs<cr>", {})
+    vim.keymap.set("n", "<leader>sh", ":split<cr>", {})
   end
 }
