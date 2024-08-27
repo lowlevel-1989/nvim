@@ -9,6 +9,9 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   opts = {
+    popup_layout = {
+      default = "right",
+    },
     openai_params = {
       model = "gpt-4o-mini",
     },
