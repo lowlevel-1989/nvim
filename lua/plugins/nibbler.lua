@@ -1,0 +1,4 @@
+return {
+  "skosulor/nibbler",
+  opts = {},
+}
