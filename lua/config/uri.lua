@@ -1,6 +1,6 @@
 --[[
 Seleccion avanzada de palabra, donde soporta uri y surround (ysiu)
---]]
+]]
 
 local function select_current_uri()
   -- Obtener la línea actual y la posición del cursor

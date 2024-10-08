@@ -1,8 +1,9 @@
 --[[
 Render Markdown
---]]
+]]
 return {
   "MeanderingProgrammer/render-markdown.nvim",
+  enabled = vim.env.TERM ~= "linux",
   opts = {},
   config = function (plugin)
     require("render-markdown").setup(plugin.opts)

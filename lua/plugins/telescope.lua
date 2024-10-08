@@ -1,6 +1,6 @@
 --[[
 Mucho mas que un simple buscador de archivos
---]]
+]]
 return {
   "nvim-telescope/telescope.nvim",
   dependencies = {

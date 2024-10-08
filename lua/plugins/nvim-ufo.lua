@@ -1,6 +1,6 @@
 --[[
 Permite colapsar el codigo con zz o za
---]]
+]]
 return {
   "kevinhwang91/nvim-ufo",
   opts = {},

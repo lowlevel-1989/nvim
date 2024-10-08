@@ -1,6 +1,6 @@
 --[[
 Autocompletado
---]]
+]]
 return {
   "hrsh7th/nvim-cmp",
   dependencies = {
@@ -23,7 +23,7 @@ return {
     require("luasnip.loaders.from_vscode").lazy_load()
 
     require("nvim-highlight-colors").setup({
-      render = "virtual",
+      render = vim.env.TERM ~= "linux" and "virtual" or "background",
       virtual_symbol_prefix = " ",
       virtual_symbol_suffix = "",
       virtual_symbol_position = "eow",

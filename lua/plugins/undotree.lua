@@ -1,6 +1,6 @@
 --[[
 Undo Tree
---]]
+]]
 return {
   "mbbill/undotree",
   config = function()

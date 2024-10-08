@@ -1,12 +1,12 @@
 --[[
 pinta las lineas de flujo
---]]
+]]
 return {
   "lukas-reineke/indent-blankline.nvim",
   main = "ibl",
   opts = {
     indent = {
-      char = "▏",
+      char = vim.env.TERM ~= "linux" and "▏" or "|",
     }
   },
 }

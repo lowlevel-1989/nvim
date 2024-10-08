@@ -6,8 +6,9 @@ WARN:
 PERF:
 NOTE:
 TEST:
---]]
+]]
 return {
   "folke/todo-comments.nvim",
-  opts = {},
+  opts = {
+  },
 }

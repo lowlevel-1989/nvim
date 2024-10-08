@@ -1,6 +1,6 @@
 --[[
 Control de ventanas
---]]
+]]
 return {
   "mrjones2014/smart-splits.nvim",
   config = function(plugin)

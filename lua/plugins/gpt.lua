@@ -1,6 +1,6 @@
 --[[
 Permite conectar con ChatGPT
---]]
+]]
 return {
   "jackMort/ChatGPT.nvim",
   dependencies = {
@@ -8,6 +8,7 @@ return {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
   },
+  enabled = vim.env.TERM ~= "linux",
   opts = {
     popup_layout = {
       default = "right",

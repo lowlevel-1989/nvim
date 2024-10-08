@@ -26,6 +26,10 @@ vim.opt.listchars = {
   extends  = '»'
 }
 
+if vim.env.TERM == 'linux' then
+  vim.cmd "colorscheme darkblue"
+end
+
 vim.keymap.set('t', '<C-x>', [[<C-\><C-n>]], { desc = "Release terminal", noremap = true, silent = true })
 
 local function copy_path(opts)
